@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XRLab — Học lập trình VR · MR · XR với Unreal Engine 5.6 &amp; Meta Quest 3</title>
+    <meta
+      name="description"
+      content="Giáo án VR/MR/XR có hệ thống cho Unreal Engine 5.6 và Meta Quest 3: từ hạ tầng, VR Pawn, tương tác, Stereo Layer UI, Passthrough/MRUK tới hiệu năng 72 fps. Bài học, lab tương tác, trắc nghiệm và ôn tập ngắt quãng."
+    />
+    <link rel="icon" type="image/png" href="/reix-favicon.png" />
+    <link rel="apple-touch-icon" href="/reix-favicon.png" />
+    <meta name="author" content="ReiX Labs" />
+    <meta name="generator" content="ReiX Labs" />
+    <meta name="theme-color" content="#07060f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- ============================================================
+         Sản phẩm thuộc sở hữu của team ReiX Labs · © ReiX Labs
+         Vui lòng không sao chép/tái phân phối khi chưa được phép.
+         ============================================================ -->
+    <style>
+      .reix-credit{position:fixed;right:14px;bottom:14px;z-index:2147483000;display:flex;align-items:center;gap:9px;
+        padding:6px 13px;border-radius:14px;background:rgba(255,255,255,.95);
+        box-shadow:0 3px 14px rgba(30,20,70,.22);border:1px solid rgba(90,58,166,.20);
+        text-decoration:none;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+        transform-origin:100% 100%;transition:transform .2s ease,box-shadow .2s ease}
+      .reix-credit:hover{transform:scale(2);box-shadow:0 12px 34px rgba(30,20,70,.42)}
+      .reix-credit__by{font:600 11px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#6b5aa0;letter-spacing:.03em;white-space:nowrap}
+      .reix-credit img{height:32px;width:auto;display:block}
+      .reix-credit .rx-white{display:none}
+      .reix-footer{position:fixed;left:50%;bottom:6px;transform:translateX(-50%);z-index:2147482000;pointer-events:none;white-space:nowrap;padding:3px 13px;border-radius:999px;font:600 11px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;letter-spacing:.02em;color:#6b6a78;background:rgba(255,255,255,.72);border:1px solid rgba(0,0,0,.05);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+      .reix-footer b{color:#6b5aa0}
+      [data-theme="dark"] .reix-footer{color:#a7a3c2;background:rgba(20,22,30,.6);border-color:rgba(255,255,255,.08)}
+      [data-theme="dark"] .reix-footer b{color:#c3bbf0}
+      @media (max-width:520px){.reix-footer{font-size:10px;padding:3px 10px}}
+      @media (max-width:640px){.reix-credit__by{display:none}.reix-credit{padding:5px 9px;right:10px;bottom:10px}.reix-credit img{height:26px}}
+    </style>
+    <footer class="reix-footer">Sản phẩm của <b>ReiX&nbsp;Labs</b> · © 2026 ReiX Labs</footer>
+    <a class="reix-credit" href="https://github.com/Rei-1407" target="_blank" rel="noopener"
+       title="Sản phẩm của team ReiX Labs" aria-label="Sản phẩm của team ReiX Labs">
+      <span class="reix-credit__by">Made by</span>
+      <img class="rx-color" src="/reix-logo.png" alt="ReiX Labs" />
+      <img class="rx-white" src="/reix-logo-white.png" alt="ReiX Labs" />
+    </a>
+    <script>
+      // Show the light/dark ReiX logo depending on the current theme.
+      (function () {
+        const root = document.documentElement;
+        const apply = () => {
+          const dark = root.dataset.theme !== "light";
+          const color = document.querySelector(".reix-credit .rx-color");
+          const white = document.querySelector(".reix-credit .rx-white");
+          if (color) color.style.display = dark ? "none" : "block";
+          if (white) white.style.display = dark ? "block" : "none";
+        };
+        apply();
+        new MutationObserver(apply).observe(root, { attributes: true, attributeFilter: ["data-theme"] });
+      })();
+    </script>
+  </body>
+</html>
