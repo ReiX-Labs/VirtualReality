@@ -2,7 +2,7 @@
 
 Website học tập tương tác được sinh ra từ giáo án [`GiaoAn_VR_UE56_Quest3.md`](GiaoAn_VR_UE56_Quest3.md) — toàn bộ nội dung bài học lấy thẳng từ tài liệu gốc, không chép tay lại.
 
-**🌐 Truy cập:** https://rei-1407.github.io/VirtualReality/
+**🌐 Truy cập:** https://reix-labs.github.io/VirtualReality/
 
 ## Có gì trong đó
 
